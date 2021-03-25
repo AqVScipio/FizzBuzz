@@ -3,10 +3,12 @@ class FizzBuzzValueChecker:
 
     @staticmethod
     def checkValue(value):
-        if(value < 0):
+        if value < 0:
             raise(NegativeValueError())
-        else:
+        elif value == 0:
             raise(Value0Error())
+        elif value % 3 == 0: 
+            return "Fizz"
 
 class Value0Error(Exception):
     def __init__(self):
