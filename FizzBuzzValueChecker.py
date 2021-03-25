@@ -9,6 +9,8 @@ class FizzBuzzValueChecker:
             return "Fizz"
         elif value % 5 == 0:
             return "Buzz"
+        elif value % 3 == 0 and value % 5 == 0:
+            return "FizzBuzz"
 
 class IncorrectValueError(Exception):
     def __init__(self):
