@@ -13,6 +13,8 @@ class FizzBuzzValueChecker:
             return "Fizz"
         elif value % 5 == 0:
             return "Buzz"
+        
+        return value
             
 
 class IncorrectValueError(Exception):
