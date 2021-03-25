@@ -3,7 +3,7 @@ class FizzBuzzValueChecker:
 
     @staticmethod
     def checkValue(value):
-        if value == 0 or value < 0:
+        if value <= 0:
             raise(IncorrectValueError())
 
         if value % 3 == 0 and value % 5 == 0:
