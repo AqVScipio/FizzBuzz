@@ -1,5 +1,6 @@
 import unittest
-from FizzBuzzValueChecker import *
+from FizzBuzzValueChecker import FizzBuzzValueChecker
+from FizzBuzzValueChecker import IncorrectValueError
 
 class FizzBuzzTest(unittest.TestCase):
 
