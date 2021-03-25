@@ -8,3 +8,7 @@ class FizzBuzzValueChecker:
 class Value0Error(Exception):
     def __init__(self):
         super()
+
+class NegativeValueError(Exception):
+    def __init__(self):
+        super()
