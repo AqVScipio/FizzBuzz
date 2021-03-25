@@ -20,3 +20,8 @@ class FizzBuzzTest(unittest.TestCase):
         value = 10
         actual = FizzBuzzValueChecker.checkValue(value)
         self.assertEqual("Buzz", actual)
+
+    def test_multiple_of_3_and_5_returns_Buzz(self):
+        value = 15
+        actual = FizzBuzzValueChecker.checkValue(value)
+        self.assertEqual("FizzBuzz", actual)
