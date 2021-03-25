@@ -25,3 +25,8 @@ class FizzBuzzTest(unittest.TestCase):
         value = 15
         actual = FizzBuzzValueChecker.checkValue(value)
         self.assertEqual("FizzBuzz", actual)
+
+    def test_matches_no_case_returns_value(self):
+        value = 4
+        actual = FizzBuzzValueChecker.checkValue(value)
+        self.assertEqual(value, actual)
